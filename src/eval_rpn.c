@@ -41,7 +41,7 @@ void to_rpn(const char *input, char *output) {
         } else {
             while (stack_counter > 0 &&
                    priority(stack[stack_counter - 1]) >= priority(c)) {
-                output[output_counter++] = stack[--stack_counter];
+                   output[output_counter++] = stack[--stack_counter];
             }
             stack[stack_counter++] = c;
         }

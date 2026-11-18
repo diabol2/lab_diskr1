@@ -33,7 +33,7 @@ void print_sdnf(const char *vars, int n, const int *f) {
     }
 
     if (first) {
-        printf("does not exist (function is constant 0, no rows with value 1)");
+        printf("Невозможно построить СДНФ (нету строк со значением 1)");
     }
     printf("\n");
 }
@@ -66,7 +66,7 @@ void print_sknf(const char *vars, int n, const int *f) {
     }
 
     if (first) {
-        printf("does not exist (function is constant 1, no rows with value 0)");
+        printf("Невозможно построить скнф (нету строк со значением 0))");
     }
     printf("\n");
 }

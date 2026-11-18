@@ -200,7 +200,7 @@ void print_zhegalkin(const char *vars, int n, const int *f) {
     for (int bit = 1; bit < size; bit <<= 1) {
         for (int row = 0; row < size; row++) {
             if (row & bit) {
-                c[row] ^= c[row ^ bit];
+                c[row] = c[row] ^ c[row ^ bit];
             }
         }
     }
