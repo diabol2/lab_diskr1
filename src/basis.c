@@ -207,7 +207,7 @@ void print_zhegalkin(const char *vars, int n, const int *f) {
 
     printf("Zhegalkin polynomial: ");
     int first = 1;
-    for (int row = size - 1; row >= 0; row--) {   /* от старших мономов к 1 */
+    for (int row = size - 1; row >= 0; row--) {
         if (c[row] == 0) {
             continue;
         }
@@ -220,7 +220,7 @@ void print_zhegalkin(const char *vars, int n, const int *f) {
         } else {
             for (int i = 0; i < n; i++) {
                 if (var_value(row, n, i)) {
-                    printf("%c", vars[i]);        /* произведение = конъюнкция */
+                    printf("%c", vars[i]);
                 }
             }
         }
